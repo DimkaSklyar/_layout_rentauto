@@ -3,8 +3,157 @@
 @import "libs"
 
 /*==========  user style  ==========*/
-.test
-	color: #000
-/*==========  user style  ==========*/
+a
+	&:link
+		color: $accent
+		outline: none 0
+	&:visited
+		color: $accent
+		outline: none 0
+	&:hover
+		color: $accent
+		text-decoration: none
+	&:active
+		color: $accent
+		outline: none 0
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+body
+	min-width: 500px
+	font-family: 'Roboto Condensed', sans-serif
 
+.top-info
+	padding: 20px 0
+	background-color: #fff
+	.top-info-contacts
+		display: flex
+		justify-content: flex-end
+		font-size: 20px
+		letter-spacing: 1px
+		i
+			color: $other-color
+		.timework
+			border-right: 1px solid #e1e1e1
+			display: block
+			padding-right: 15px
+		li:last-child
+			margin: 0 15px
+			margin-right: 0
+
+.top-navigation__wrapper
+	background-color: #363636
+	.top-nav
+		ul
+			display: flex
+			li
+				a
+					display: block
+					padding: 20px 20px
+					text-transform: uppercase
+					letter-spacing: 1px
+					font-size: 16px
+					position: relative
+					text-align: center
+					font-weight: bold
+					&:before
+						content: ''
+						position: absolute
+						height: 3px
+						width: 100%
+						top: 0
+						left: 0
+						transform: translateX(-100%)
+						background-color: $other-color
+						opacity: 0
+					&:hover:before
+						opacity: 1
+						animation: hover-menu-item .4s forwards
+					&.active
+						&:before
+							content: ''
+							position: absolute
+							height: 3px
+							width: 100%
+							top: 0
+							left: 0
+							opacity: 1
+							transform: translateX(0)
+							background-color: $other-color
+	.social-wrap
+		height: 100%
+		.social
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			height: inherit
+			li
+				margin-left: 15px
+				font-size: 20px
+				a
+					transition: .3s
+					&:hover
+						color: $other-color
+	a
+		color: #fff
+.find-car-wrap
+	height: calc(100vh - 250px)
+	min-height: 400px
+	.find-car-container
+		display: flex
+		justify-content: center
+		align-items: center
+		height: inherit
+		padding: 20px 0 70px
+		.find-car-inner
+			text-align: center
+	h1
+		font-size: 70px
+		font-weight: bold
+		letter-spacing: 5px
+		color: #ffffff
+	p
+		color: #e4ebff
+		font-size: 24px
+		font-weight: 400
+		letter-spacing: 3px
+		i
+			font-size: 21px
+.name-car-select
+	padding: 10px
+	font-family: 'Roboto Condensed', sans-serif
+	width: 160px
+	font-size: 18px
+	option
+		padding: 10px
+.jq-selectbox__dropdown,
+.jq-selectbox__select
+	background-color: #fff
+	padding: 10px
+	width: 100%
+	li
+		padding: 10px
+		
+/*==========  user style  ==========*/
+.parallax
+	min-height: 400px
+	background: transparent
+
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
+
++keyframes(hover-menu-item)
+	0%
+		transform: translateX(-15%)
+	50%
+		transform: translateX(15%)
+	100%
+		transform: translateX(0%)
 @import "media" // Always at the end
