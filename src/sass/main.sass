@@ -31,7 +31,6 @@ body
 	text-transform: uppercase
 	font-weight: bold
 	color: #fff !important
-	letter-spacing: 1px
 .top-info
 	padding: 20px 0
 	background-color: #fff
@@ -39,7 +38,6 @@ body
 		display: flex
 		justify-content: flex-end
 		font-size: 20px
-		letter-spacing: 1px
 		i
 			color: $other-color
 		.timework
@@ -60,7 +58,6 @@ body
 					display: block
 					padding: 20px 20px
 					text-transform: uppercase
-					letter-spacing: 1px
 					font-size: 16px
 					position: relative
 					text-align: center
@@ -121,13 +118,11 @@ body
 	h1
 		font-size: 70px
 		font-weight: bold
-		letter-spacing: 5px
 		color: #ffffff
 	p
 		color: #e4ebff
 		font-size: 24px
 		font-weight: 400
-		letter-spacing: 3px
 		i
 			font-size: 21px
 .select-wrap
@@ -136,19 +131,19 @@ body
 	align-items: baseline
 	justify-content: center
 .car-select
-	font-family: 'Roboto Condensed', sans-serif
-	width: 200px
+	font-family: 'Montserrat Alternates', sans-serif
+	width: 210px
 	font-size: 18px
 	option
 		padding: 10px
 .jq-selectbox__dropdown
 	background-color: #fff
-	width: 200px
+	width: 210px
 	li
-		padding: 10px
+		padding: 10px 15px
 		text-align: left
 .jq-selectbox__select
-	padding: 10px
+	padding: 10px 15px
 	background-color: #fff
 	text-align: left
 .jqselect:not(:last-child)
@@ -170,7 +165,6 @@ section
 	h2
 		font-size: 48px
 		text-transform: capitalize
-		letter-spacing: 3px
 		padding-bottom: 50px
 		text-align: center
 		font-weight: bold
@@ -205,7 +199,6 @@ section
 	h2
 		color: #ffffff
 	.advent
-		letter-spacing: 1px
 		padding: 50px 15px 40px 50px
 		border: 1px solid #5c5c5c
 		outline: 1px solid #5c5c5c
@@ -234,6 +227,119 @@ section
 		p
 			color: #9b9b9b
 
+.popular-cars
+	&__item
+		border: 1px solid #e1e1e1
+		padding: 18px 22px
+		&:first-child
+			margin-bottom: 30px
+		&:nth-child(2)
+			margin-bottom: 30px
+		&__img
+			height: 220px
+			overflow: hidden
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+				transform: scale(1.1)
+				transition: .3s
+				&:hover
+					transform: scale(1)
+		&__text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			height: 100%
+			h3
+				transition: .3s
+				font-size: 28px
+				margin-bottom: 10px
+				&:hover
+					color: $other-color
+			strong
+				font-weight: 600
+				background-color: $other-color
+				position: relative
+				width: fit-content
+				color: #ffffff
+				text-transform: uppercase
+				font-size: 16px
+				padding: 6px 13px 4px 19px
+				&:before
+					content: ''
+					position: absolute
+					width: 20px
+					height: 20px
+					border-radius: 50%
+					background-color: #fff
+					left: -10px
+					top: 50%
+					transform: translateY(-50%)
+				&:hover
+					background-color: #9b9b9b
+				i
+					font-size: 14px
+
+.type-auto
+	background-color: #f7f7f7
+	&__item
+		text-align: center
+		position: relative
+		margin-top: 60px
+		.icon
+			font-size: 48px
+			background-color: #fff
+			border-radius: 50%
+			border: 1px solid #ddd
+			display: inline-block
+			padding: 10px
+			width: 120px
+			height: 120px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 auto
+			position: absolute
+			top: -80px
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 5
+	&__text
+		background-color: #fff
+		border: 1px solid #ddd
+		padding: 50px 0 20px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 140px
+			height: 140px
+			border-radius: 50%
+			border: 1px solid #ddd
+			top: -90px
+			left: 50%
+			background: #f7f7f7
+			transform: translateX(-50%)
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100px
+			top: -101px
+			left: 0
+			background: #f7f7f7
+		h4
+			font-size: 24px
+			margin-bottom: 5px
+			margin-top: 15px
+		p
+			line-height: 1
+			color: $other-color
+			margin-bottom: 10px
+		a
+			text-decoration: underline
+			text-transform: uppercase
 /*==========  user style  ==========*/
 .parallax
 	min-height: 400px
