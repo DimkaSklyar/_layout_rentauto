@@ -69,34 +69,129 @@
 		<div class="find-car-wrap" data-parallax="scroll" data-image-src="img/bcg-header.jpg">
 			<div class="container find-car-container">
 				<div class="find-car-inner">
-					<h1>В поисках Лучших Авто</h1>
+					<h1>В поисках Лучшего Авто</h1>
 					<p>От 1000<i class="fa fa-rub" aria-hidden="true"></i> в день на комфортном автомобиле</p>
 					<div class="select-wrap">
-						<select name="namecar" id="namecar" class="name-car-select">
-							<option value="all">Все</option>
+						<select name="namecar" id="namecar" class="car-select">
+							<option value="all">Все марки</option>
 							<option value="ford">Ford</option>
 							<option value="bmw">BMW</option>
 							<option value="toyota">Toyota</option>
 						</select>
-						<select name="namecar" id="namecar" class="name-car-select">
-							<option value="all">Все</option>
-							<option value="ford">Ford</option>
-							<option value="bmw">BMW</option>
-							<option value="toyota">Toyota</option>
+						<select name="typecar" id="typecar" class="car-select">
+							<option value="all">Все типы</option>
+							<option value="sedan">Седан</option>
+							<option value="hetchbek">Хэтчбек</option>
+							<option value="jeep">Джип</option>
 						</select>
-						<select name="namecar" id="namecar" class="name-car-select">
-							<option value="all">Все</option>
-							<option value="ford">Ford</option>
-							<option value="bmw">BMW</option>
-							<option value="toyota">Toyota</option>
+						<select name="namecar" id="namecar" class="car-select">
+							<option value="ford">По возрастанию</option>
+							<option value="bmw">По убыванию</option>
 						</select>
-						<button class="btn btn-blue">Показать</button>
+						<a href="#" class="btn btn-blue">Показать</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
+	<main>
+		<section class="cars">
+			<div class="container">
+				<h2>Наши автомибили</h2>
+				<div class="row">
+					<div class="col-4">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-1.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Audi</h3>
+									</a>
+									<p class="d-none d-1">Описание</p>
+									<p><span class="price">1000</span> <i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="car-wrap">
+							<div class="car-item">
+								<div class="car-item__img"><img src="" alt=""></div>
+								<div class="car-item__text">
+									<h3></h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="car-wrap">
+							<div class="car-item">
+								<div class="car-item__img"><img src="" alt=""></div>
+								<div class="car-item__text">
+									<h3></h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="car-wrap">
+							<div class="car-item">
+								<div class="car-item__img"><img src="" alt=""></div>
+								<div class="car-item__text">
+									<h3></h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="car-wrap">
+							<div class="car-item">
+								<div class="car-item__img"><img src="" alt=""></div>
+								<div class="car-item__text">
+									<h3></h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="car-wrap">
+							<div class="car-item">
+								<div class="car-item__img"><img src="" alt=""></div>
+								<div class="car-item__text">
+									<h3></h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="container-mix">
+			<div class="mix">1</div>
+			<div class="mix">2</div>
+			<div class="mix">1</div>
+			<div class="mix">2</div>
+			<div class="mix">1</div>
+			<div class="mix">2</div>
+			<div class="mix">1</div>
+			<div class="mix">2</div>
+			<div class="mix">1</div>
+			<div class="mix">2</div>
+		</div>
+
+		<div class="mixitup-page-list"></div>
+	</main>
 
 	<br>
 	<br>
@@ -138,6 +233,32 @@
 	<br>
 	<br>
 	<br>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide product__element">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="small-dialog__img">
+						<img src="img/product/product-1" alt="" id="product-img">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="small-dialog-text__wrapper">
+						<div class="small-dialog-text">
+							<h2 id="product-name">Заголовок</h2>
+							<p id="description">jgbcfybt</p>
+							<span class="price" id="price">тест </span><i class="fa fa-rub" aria-hidden="true"></i>
+							<div class="product__quantity"></div>
+						</div>
+						<button >
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Заказать
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/scripts.min.js"></script>
 	<script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
 </body>
