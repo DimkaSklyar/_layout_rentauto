@@ -5,17 +5,14 @@
 
 /*==========  user style  ==========*/
 a
+	transition: .3s
 	&:link
-		color: $accent
 		outline: none 0
 	&:visited
-		color: $accent
 		outline: none 0
 	&:hover
-		color: $accent
 		text-decoration: none
 	&:active
-		color: $accent
 		outline: none 0
 ul
 	list-style-type: none
@@ -499,10 +496,135 @@ section
 			font-size: 13px
 			margin-bottom: 5px
 			color: #5d5d5d
+.faq
+	background-color: #f7f7f7
+	.btn-question
+		padding: 20px 25px
+		background: none
+		outline: none 0
+		border: 1px solid #e1e1e1
+		color: #333
+		font-size: 18px
+		font-family: 'Montserrat Alternates', sans-serif
+		text-align: left
+		width: 100%
+		transition: .3s
+		cursor: pointer
+		font-size: 18px
+		font-weight: 400
+		position: relative
+		display: inline-block
+		&:hover
+			color: $other-color
+		&:before
+			position: absolute
+			content: '\f067'
+			font-family: "FontAwesome"
+			right: 10px
+			top: 50%
+			transform: translateY(-50%)
+			font-size: 18px
+			border: 2px solid $other-color
+			line-height: 1
+			padding: 10px 12px
+			border-radius: 50%
+			color: #333
+	.in
+		.btn-question
+			&:before
+				content: '\f068'
+	.question-body
+		background-color: #f7f7f7
+		border: 1px solid #e1e1e1
+		padding: 20px 25px
+		color: #9b9b9b
+		font-size: 16px
+		border-top-color: transparent
+		ul
+			list-style: disc
+			margin-left: 20px
+	.question
+		margin-bottom: 20px
+	.video-bcg
+		position: relative
+		img
+			width: 100%
+		.btn-play
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: 60px
+			height: 60px
+			background-color: #fff
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			transition: .3s
+			border: 0px solid #fff
+			&:hover
+				color: #fff
+				background-color: $other-color
+				border: 5px solid #fff
+				transform:  translate(-50%,-50%) scale(1.2)
+.panel-heading.in a::after
+	transform: rotate(180deg)
+.panel-collapse
+	display: none
+.show
+	display: block
+
+footer
+	background-color: #333
+	color: #ffffff !important
+	padding: 75px
+	h3
+		text-transform: uppercase
+		font-size: 20px
+		margin-bottom: 20px
+	li
+		margin-bottom: 7px
+		i
+			margin-right: 10px
+	a
+		color: #ffffff
+	.btn
+		display: inline-block
+.copyright
+	background-color: #2e2e2e
+	color: #9b9b9b
+	font-size: 13px
+	font-weight: bold
+	padding: 25px 0
+	line-height: 1
+	p
+		margin-bottom: 0
+	.social
+		display: flex
+		justify-content: center
+		a
+			color: #9b9b9b
+			font-size: 18px
+			margin: 0 8px
+			&:hover
+				color: $other-color
+	.usl
+		text-align: right
+		display: block
+		color: #9b9b9b
+		&:hover
+			color: $other-color
+.ta-r
+	text-align: right
+.pl-3
+	padding-left: 30px
 /*==========  user style  ==========*/
 .parallax
 	min-height: 400px
 	background: transparent
+
+
 
 #small-dialog
 	padding-bottom: 40px

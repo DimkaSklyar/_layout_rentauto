@@ -1,6 +1,5 @@
 
 $(document).ready(function () {
-
 $('.owl-carousel').owlCarousel({
     loop:true,
     responsiveClass:true,
@@ -44,5 +43,10 @@ $('.owl-carousel').owlCarousel({
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
-	});
+  });
+  
+  $('.panel-heading').click(function () {
+    $(this).toggleClass('in').next().slideToggle();
+    $('.panel-heading').not(this).removeClass('in').next().slideUp();
+      });
 });
