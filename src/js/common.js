@@ -1,6 +1,26 @@
 
 $(document).ready(function () {
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+		dots: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:2,
+            loop:false
+        }
+    }
+})
+
   var mixer = mixitup(".container-mix", {
     pagination: {
       limit: 6 // impose a limit of 8 targets per page
