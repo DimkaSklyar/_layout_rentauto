@@ -8632,6 +8632,12 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 1199px) {
+  .top-navigation__wrapper .top-nav ul li a {
+    font-size: 14px;
+  }
+}
+
 .top-navigation__wrapper .top-nav ul li a:before {
   content: '';
   position: absolute;
@@ -8712,6 +8718,12 @@ body {
   font-size: 70px;
   font-weight: bold;
   color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .find-car-wrap h1 {
+    font-size: 56px;
+  }
 }
 
 .find-car-wrap p {
@@ -8842,6 +8854,13 @@ section h2 {
   outline: 1px solid #5c5c5c;
   outline-offset: -10px;
   transition: .2s;
+  min-height: 220px;
+}
+
+@media (max-width: 1199px) {
+  .choose-us .advent {
+    padding: 25px 15px 25px 50px;
+  }
 }
 
 .choose-us .advent:before {
@@ -8851,6 +8870,12 @@ section h2 {
   font-family: FontAwesome;
   color: #fff;
   font-size: 28px;
+}
+
+@media (max-width: 1199px) {
+  .choose-us .advent:before {
+    top: 25px;
+  }
 }
 
 .choose-us .advent.star:before {
@@ -8876,8 +8901,20 @@ section h2 {
   position: relative;
 }
 
+@media (max-width: 1199px) {
+  .choose-us .advent h4 {
+    font-size: 24px;
+  }
+}
+
 .choose-us .advent p {
   color: #9b9b9b;
+}
+
+@media (max-width: 1199px) {
+  .choose-us .advent p {
+    font-size: 14px;
+  }
 }
 
 .popular-cars__item {
@@ -8896,6 +8933,7 @@ section h2 {
 .popular-cars__item__img {
   height: 220px;
   overflow: hidden;
+  height: 170px;
 }
 
 .popular-cars__item__img img {

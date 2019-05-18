@@ -63,6 +63,8 @@ body
 					position: relative
 					text-align: center
 					font-weight: bold
+					+media-breakpoint-down(lg)
+						font-size: 14px
 					&:before
 						content: ''
 						position: absolute
@@ -120,6 +122,8 @@ body
 		font-size: 70px
 		font-weight: bold
 		color: #ffffff
+		+media-breakpoint-down(lg)
+			font-size: 56px
 	p
 		color: #e4ebff
 		font-size: 24px
@@ -211,6 +215,9 @@ section
 		outline: 1px solid #5c5c5c
 		outline-offset: -10px
 		transition: .2s
+		min-height: 220px
+		+media-breakpoint-down(lg)
+			padding: 25px 15px 25px 50px
 		&:before
 			position: absolute
 			left: 33px
@@ -218,6 +225,8 @@ section
 			font-family: FontAwesome
 			color: #fff
 			font-size: 28px
+			+media-breakpoint-down(lg)
+				top: 25px
 		&.star:before
 			content: '\f005'
 		&.location:before
@@ -231,8 +240,12 @@ section
 			color: #ffffff
 			font-size: 26px
 			position: relative
+			+media-breakpoint-down(lg)
+				font-size: 24px
 		p
 			color: #9b9b9b
+			+media-breakpoint-down(lg)
+				font-size: 14px
 
 .popular-cars
 	&__item
@@ -245,6 +258,8 @@ section
 		&__img
 			height: 220px
 			overflow: hidden
+			+media-breakpoint-down(lg)
+			height: 170px
 			img
 				object-fit: cover
 				width: 100%
