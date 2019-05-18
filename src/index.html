@@ -49,7 +49,8 @@
 							<ul>
 								<li><a href="index.html" class="active">Главная</a></li>
 								<li><a href="cars.html">Машины</a></li>
-								<li><a href="price.html">Цены</a></li>
+								<li><a href="price.html">Тарифы</a></li>
+								<li><a href="conditions.html">Условия проката</a></li>
 								<li><a href="about.html">О нас</a></li>
 								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
@@ -58,10 +59,10 @@
 					<div class="col-2">
 						<div class="social-wrap">
 							<ul class="social">
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -76,21 +77,31 @@
 					<div class="select-wrap">
 						<select name="namecar" id="namecar" class="car-select">
 							<option value="all">Все марки</option>
-							<option value="ford">Ford</option>
-							<option value="bmw">BMW</option>
-							<option value="toyota">Toyota</option>
+							<option value=".hyundai">Hyundai</option>
+							<option value=".volkswagen">Volkswagen</option>
+							<option value=".ravon">Ravon</option>
+							<option value=".kia">Kia</option>
+							<option value=".ford">Ford</option>
+							<option value=".nissan">Nissan</option>
+							<option value=".сhevrolet">Chevrolet</option>
+							<option value=".toyota">Toyota</option>
+							<option value=".mercedes">Mercedes</option>
+							<option value=".citroen">Citroen</option>
+							<option value=".audi">Audi</option>
+							<option value=".tesla">Tesla</option>
 						</select>
 						<select name="typecar" id="typecar" class="car-select">
 							<option value="all">Все типы</option>
-							<option value="sedan">Седан</option>
-							<option value="hetchbek">Хэтчбек</option>
-							<option value="jeep">Джип</option>
+							<option value=".sedan">Седан</option>
+							<option value=".hetchbek">Хэтчбек</option>
+							<option value=".jeep">Кроссовер</option>
+							<option value=".universal">Универсал</option>
 						</select>
-						<select name="namecar" id="namecar" class="car-select">
-							<option value="ford">По возрастанию</option>
-							<option value="bmw">По убыванию</option>
+						<select name="namecar" id="sort" class="car-select">
+							<option value="order:asc">По возрастанию</option>
+							<option value="order:desc">По убыванию</option>
 						</select>
-						<a href="#" class="btn btn-blue">Показать</a>
+						<a href="#showCars" class="btn btn-blue" id="showCars">Показать</a>
 					</div>
 				</div>
 			</div>
@@ -98,11 +109,11 @@
 	</header>
 
 	<main>
-		<section class="cars">
+		<section class="cars" id="car-section">
 			<div class="container">
 				<h2>Наши автомибили</h2>
 				<div class="row container-mix">
-					<div class="col-4 mix">
+					<div class="col-4 mix kia sedan" data-order="1600">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
@@ -112,190 +123,382 @@
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Kia Rio</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1600</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix ravon sedan" data-order="1400">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-2.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Ravon R3</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-92</li>
+											<li>Мощность : 106 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1400</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix volkswagen sedan" data-order="1700">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-3.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Volkswagen Polo</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 110 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1700</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix hyundai sedan" data-order="1800">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-4.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Hyundai Solaris</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1800</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix ford hetchbek" data-order="1900">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-5.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Ford Focus</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 125 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1900</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix nissan sedan" data-order="2000">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-6.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Nissan Sentra</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 117 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">2000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix hyundai jeep" data-order="2900">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-7.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Hyundai Creta</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">2900</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix сhevrolet universal" data-order="3300">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-8.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Chevrolet Orlando</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 163 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">3300</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix toyota sedan" data-order="3800">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-9.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Toyota Camry</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 150 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">3800</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix kia sedan" data-order="4000">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-10.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Kia Optioma</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 187 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">4000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4 mix">
+					<div class="col-4 mix mercedes sedan" data-order="5000">
 						<div class="car-wrap">
 							<div class="car-item">
 								<a class="popup-with-zoom-anim" href="#small-dialog">
 									<div class="car-item__img">
-										<img src="img/cars/cars-1.jpg" alt="">
+										<img src="img/cars/cars-11.jpg" alt="">
 									</div>
 								</a>
 								<div class="car-item__text">
 									<a class="popup-with-zoom-anim" href="#small-dialog">
-										<h3>Audi</h3>
+										<h3>Mercedes Е200</h3>
 									</a>
-									<p class="d-none d-1">Описание</p>
-									<p>От <span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 184 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">5000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 mix mercedes sedan" data-order="6500">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-12.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Mercedes С180</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 184 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">6500</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 mix citroen hetchbek" data-order="2500">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-13.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Citroen C4</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">2500</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 mix audi sedan" data-order="5500">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-14.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Audi A6</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 168 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">5500</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 mix tesla sedan" data-order="35000">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-15.png" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Tesla Model S</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : Электрокар</li>
+											<li>Мощность : 362 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">35000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 								</div>
 							</div>
 						</div>
@@ -337,88 +540,120 @@
 						<article class="popular-cars__item">
 							<div class="row">
 								<div class="col-6">
-									<a href="#">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
 										<div class="popular-cars__item__img">
-											<img src="img/cars/cars-1.jpg" alt="">
+											<img src="img/cars/cars-3.jpg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="col-6">
 									<div class="popular-cars__item__text">
-										<a href="#">
-											<h3>Ford Mustang GT Fastback</h3>
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Volkswagen Polo</h3>
 										</a>
-										<p class="d-none d-1">Описание</p>
-										<strong><span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
-										</diva>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 110 л.с.</li>
+												<li>Кондиционер : есть</li>
+											</ul>
+										</div>
+										<strong><span class="price">1700</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
 									</div>
 								</div>
+							</div>
 						</article>
 					</div>
 					<div class="col-6">
 						<article class="popular-cars__item">
 							<div class="row">
 								<div class="col-6">
-									<a href="#">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
 										<div class="popular-cars__item__img">
-											<img src="img/cars/cars-1.jpg" alt="">
+											<img src="img/cars/cars-5.jpg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="col-6">
 									<div class="popular-cars__item__text">
-										<a href="#">
-											<h3>Ford Mustang GT Fastback</h3>
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Ford Focus</h3>
 										</a>
-										<p class="d-none d-1">Описание</p>
-										<strong><span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
-										</diva>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 125 л.с.</li>
+												<li>Кондиционер : есть</li>
+											</ul>
+										</div>
+										<strong><span class="price">1900</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
 									</div>
 								</div>
+							</div>
 						</article>
 					</div>
 					<div class="col-6">
 						<article class="popular-cars__item">
 							<div class="row">
 								<div class="col-6">
-									<a href="#">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
 										<div class="popular-cars__item__img">
-											<img src="img/cars/cars-1.jpg" alt="">
+											<img src="img/cars/cars-9.jpg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="col-6">
 									<div class="popular-cars__item__text">
-										<a href="#">
-											<h3>Ford Mustang GT Fastback</h3>
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Toyota Camry</h3>
 										</a>
-										<p class="d-none d-1">Описание</p>
-										<strong><span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
-										</diva>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 150 л.с.</li>
+												<li>Кондиционер : климат-контроль</li>
+											</ul>
+										</div>
+										<strong><span class="price">3800</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
 									</div>
 								</div>
+							</div>
 						</article>
 					</div>
 					<div class="col-6">
 						<article class="popular-cars__item">
 							<div class="row">
 								<div class="col-6">
-									<a href="#">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
 										<div class="popular-cars__item__img">
-											<img src="img/cars/cars-1.jpg" alt="">
+											<img src="img/cars/cars-11.jpg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="col-6">
 									<div class="popular-cars__item__text">
-										<a href="#">
-											<h3>Ford Mustang GT Fastback</h3>
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Mercedes Е200</h3>
 										</a>
-										<p class="d-none d-1">Описание</p>
-										<strong><span class="price">1000</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
-										</diva>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 184 л.с.</li>
+												<li>Кондиционер : климат-контроль</li>
+											</ul>
+										</div>
+										<strong><span class="price">5000</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
 									</div>
 								</div>
+							</div>
 						</article>
 					</div>
 				</div>
@@ -435,44 +670,44 @@
 							</div>
 							<div class="type-auto__text">
 								<h4>Седан</h4>
-								<p><span class="count">10</span> автомобилей</p>
-								<a href="#">Посмотреть</a>
+								<p><span class="count">9</span> автомобилей</p>
+								<a href="#car-section" id="showSedan">Посмотреть</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="type-auto__item">
 							<div class="icon">
-								<i class="fa fa-car" aria-hidden="true"></i>
+								<i class="fa fa-rocket" aria-hidden="true"></i>
 							</div>
 							<div class="type-auto__text">
-								<h4>Седан</h4>
-								<p><span class="count">10</span> автомобилей</p>
-								<a href="#">Посмотреть</a>
+								<h4>Хэтчбек</h4>
+								<p><span class="count">2</span> автомобиля</p>
+								<a href="#car-section" id="showHetchback">Посмотреть</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="type-auto__item">
 							<div class="icon">
-								<i class="fa fa-car" aria-hidden="true"></i>
+								<i class="fa fa-truck" aria-hidden="true"></i>
 							</div>
 							<div class="type-auto__text">
-								<h4>Седан</h4>
-								<p><span class="count">10</span> автомобилей</p>
-								<a href="#">Посмотреть</a>
+								<h4>Кроссовер</h4>
+								<p><span class="count">1</span> автомобиль</p>
+								<a href="#car-section" id="showCross">Посмотреть</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="type-auto__item">
 							<div class="icon">
-								<i class="fa fa-car" aria-hidden="true"></i>
+								<i class="fa fa-bus" aria-hidden="true"></i>
 							</div>
 							<div class="type-auto__text">
-								<h4>Седан</h4>
-								<p><span class="count">10</span> автомобилей</p>
-								<a href="#">Посмотреть</a>
+								<h4>Универсал</h4>
+								<p><span class="count">1</span> автомобиль</p>
+								<a href="#car-section" id="showUniversal">Посмотреть</a>
 							</div>
 						</div>
 					</div>
@@ -493,7 +728,7 @@
 							<p>Имея более чем 15-летний опыт работы, наша команда предлагает качественные услуги проката автомобилей
 								всем гостям и жителям РФ.</p>
 						</div>
-						<a href="#" class="btn">Показать авто</a>
+						<a href="#car-section" class="btn showAllCars">Показать авто</a>
 					</div>
 					<div class="col-4">
 						<div class="row">
@@ -526,28 +761,28 @@
 				</div>
 				<div class="row brands-items">
 					<div class="col-3 brand-wrap">
-						<a href="#">
+						<a href="#car-section" id="showMercedes">
 							<div class="brand">
 								<img src="img/brans/brands-1.png" alt="">
 							</div>
 						</a>
 					</div>
 					<div class="col-3 brand-wrap">
-						<a href="#">
+						<a href="#car-section" id="showAudi">
 							<div class="brand">
 								<img src="img/brans/brands-2.png" alt="">
 							</div>
 						</a>
 					</div>
 					<div class="col-3 brand-wrap">
-						<a href="#">
+						<a href="#car-section" id="showTesla">
 							<div class="brand">
 								<img src="img/brans/brands-3.png" alt="">
 							</div>
 						</a>
 					</div>
 					<div class="col-3 brand-wrap">
-						<a href="#">
+						<a href="#car-section" id="showCitroen">
 							<div class="brand">
 								<img src="img/brans/brands-4.png" alt="">
 							</div>
@@ -581,15 +816,14 @@
 						<article class="review-item ">
 							<div class="review-item-info row align-items-center">
 								<div class="review-item-info__img col-2">
-									<img src="img/reviews/human-1.jpg" alt="">
+									<img src="img/reviews/human-2.jpg" alt="">
 								</div>
 								<div class="review-item-info__name col-10">
-									<h3>Иван Васильев</h3>
-									<span>Постоянный клиент</span>
+									<h3>Алиса Кондратюк</h3>
+									<span>Новый клиент</span>
 								</div>
 								<p class="review-item-info__content col-12">
-									Я арендовал автомобиль довольно много раз в Москве и не могу винить ни одну из услуг. Ваш персонал
-									замечательный, процесс простой, а цены очень доступные. Я рад рекомендовать ваши услуги!
+									Это мое второе бронирование у вас. Вы не только лучшие на побережье, но у вас лучшие цены! а также самый дружелюбный персонал. Я обязательно ещё раз возьму машину напрокат в вашей компании.
 								</p>
 							</div>
 						</article>
@@ -598,15 +832,14 @@
 						<article class="review-item">
 							<div class="review-item-info row align-items-center">
 								<div class="review-item-info__img col-2">
-									<img src="img/reviews/human-1.jpg" alt="">
+									<img src="img/reviews/human-3.jpg" alt="">
 								</div>
 								<div class="review-item-info__name col-10">
-									<h3>Иван Васильев</h3>
+									<h3>Константин Иванчук</h3>
 									<span>Постоянный клиент</span>
 								</div>
 								<p class="review-item-info__content col-12">
-									Я арендовал автомобиль довольно много раз в Москве и не могу винить ни одну из услуг. Ваш персонал
-									замечательный, процесс простой, а цены очень доступные. Я рад рекомендовать ваши услуги!
+									ПрокАвто-одна из лучших компаний по прокату автомобилей в нашем городе. У меня был фантастический опыт с ними в этом году. Они предоставили мне надежный и доступный автомобиль, который был именно тем, что я просил.
 								</p>
 							</div>
 						</article>
@@ -700,7 +933,7 @@
 					<div class="col-6">
 						<div class="video-bcg">
 							<img src="img/video-bcg.jpg" alt="">
-							<a href="#video">
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=ETPDhl22dII">
 								<div class="btn-play">
 									<i class="fa fa-play" aria-hidden="true"></i>
 								</div>
@@ -725,7 +958,8 @@
 					<ul>
 						<li><a href="index.html" class="active">Главная</a></li>
 						<li><a href="cars.html">Машины</a></li>
-						<li><a href="price.html">Цены</a></li>
+						<li><a href="price.html">Тарифы</a></li>
+						<li><a href="conditions.html">Условия проката</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
@@ -741,7 +975,7 @@
 				<div class="col-3 ta-r">
 					<h3>Найди свой автомобиль</h3>
 					<p>Прокат автой, по лучшим ценам.</p>
-					<a href="#" class="btn">Поиск</a>
+					<a href="#car-section" class="btn showAllCars">Поиск</a>
 				</div>
 			</div>
 		</div>
@@ -754,14 +988,14 @@
 				</div>
 				<div class="col-4">
 					<ul class="social">
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-4">
-					<a href="#" class="usl">Условия</a>
+					<a href="conditions.html" class="usl">Условия</a>
 				</div>
 			</div>
 		</div>
@@ -781,12 +1015,17 @@
 						<div class="small-dialog-text">
 							<h2 id="product-name">Заголовок</h2>
 							<p id="description">jgbcfybt</p>
-							<span class="price" id="price">тест </span><i class="fa fa-rub" aria-hidden="true"></i>
+							<p>От <span class="price" id="price">тест </span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
 							<div class="product__quantity"></div>
 						</div>
-						<button>
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Заказать
-						</button>
+						<form action="" id="retalForm">
+							<input type="text" name="inputName" id="inputName" placeholder="ФИО" required>
+							<input type="text" name="inputTel" id="inputTel" placeholder="Телефон" required>
+							<input type="text" name="inputCar" id="inputCar" hidden>
+						</form>
+						<div id="messegeResult-feedback">
+							<button id="submitButton" type="submit" form="retalForm" class="btn">Арендовать</button>
+						</div>
 					</div>
 				</div>
 			</div>
