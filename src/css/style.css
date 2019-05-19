@@ -9806,14 +9806,67 @@ footer .btn {
   }
 }
 
+.page-price .price-wrap {
+  padding: 75px 0;
+}
+
+.page-price .price-wrap table {
+  overflow-x: а;
+}
+
+.page-price .price-wrap table th,
+    .page-price .price-wrap table td {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.page-price .price-wrap table th {
+  background-color: #000;
+  color: #fff;
+}
+
+.page-price .price-wrap table tr:nth-child(odd) {
+  background-color: rgba(36, 123, 221, 0.07);
+}
+
+.page-price .price-wrap table td:nth-child(1) {
+  text-align: left;
+}
+
+.page-price .price-wrap table td:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+
+.page-price .price-wrap table th:first-child {
+  text-align: left;
+}
+
+.page-price .price-wrap table th:last-child {
+  text-align: right;
+}
+
+.page-price .price-wrap table tr {
+  transition: .3s;
+}
+
+.page-price .price-wrap table tr:hover {
+  background-color: rgba(36, 123, 221, 0.2);
+}
+
 /*==========  user style  ==========*/
 .parallax {
   min-height: 400px;
   background: transparent;
 }
 
+#small-dialog.retal {
+  width: 200px;
+}
+
 #small-dialog {
   padding-bottom: 40px;
+  min-width: 500px;
 }
 
 #small-dialog .small-dialog__img {

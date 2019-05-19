@@ -781,15 +781,46 @@ footer
 	.select-wrap
 		+media-breakpoint-down(md)
 			width: 100%
+
+
+.page-price
+	.price-wrap
+		padding: 75px 0
+		table
+			overflow-x: а
+			th,
+			td
+				padding: 20px 15px
+				text-align: center
+			th
+				background-color: #000
+				color: #fff
+			tr:nth-child(odd)
+				background-color: rgba(36, 123, 221, 0.07)
+			td:nth-child(1)
+				text-align: left
+			td:last-child
+				text-align: right
+				padding-right: 0
+			th:first-child
+				text-align: left
+			th:last-child
+				text-align: right
+			tr
+				transition: .3s
+				&:hover
+					background-color: rgba(36, 123, 221, 0.2)
 /*==========  user style  ==========*/
 .parallax
 	min-height: 400px
 	background: transparent
 
 
-
+#small-dialog.retal
+	width: 200px
 #small-dialog
 	padding-bottom: 40px
+	min-width: 500px
 	.small-dialog__img
 		overflow: hidden
 		display: flex
