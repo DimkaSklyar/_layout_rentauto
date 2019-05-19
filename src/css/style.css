@@ -9262,6 +9262,7 @@ section h2 {
   padding: 10px 15px 20px;
   position: relative;
   transition: .3s;
+  min-height: 275px;
 }
 
 .we-work-item:before {
