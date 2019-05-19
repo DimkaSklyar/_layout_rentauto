@@ -9734,6 +9734,78 @@ footer .btn {
   padding-left: 30px;
 }
 
+.page-header {
+  background-size: cover;
+  padding: 150px 0;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    padding: 100px 0;
+  }
+}
+
+.page-header:before {
+  position: absolute;
+  content: '';
+  background: rgba(43, 49, 59, 0.48);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.page-header h1 {
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 70px;
+}
+
+@media (max-width: 991px) {
+  .page-header h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header h1 {
+    font-size: 40px;
+  }
+}
+
+.page-header-car {
+  background: url("../img/page-car-header-bcg.jpg") no-repeat;
+}
+
+.shearch-car {
+  margin-top: -50px;
+  margin-bottom: 40px;
+}
+
+.page-cars .jq-selectbox {
+  border: 1px solid #ccc;
+}
+
+.page-cars .jq-selectbox__dropdown {
+  border: 1px solid #ccc;
+  left: -1px;
+}
+
+@media (max-width: 991px) {
+  .page-cars .search {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-cars .select-wrap {
+    width: 100%;
+  }
+}
+
 /*==========  user style  ==========*/
 .parallax {
   min-height: 400px;
