@@ -168,7 +168,10 @@ $(".showAllCars").click(function () {
   mixer.filter(showAll);
 });
 
-
+$("#mobile-menu").click(function () { 
+$(".top-navigation__wrapper").toggleClass("active-mobile-menu");
+  
+});
 
   $('.popup-with-zoom-anim').magnificPopup({
     type: 'inline',

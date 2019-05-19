@@ -33,6 +33,9 @@ body
 .top-info
 	padding: 20px 0
 	background-color: #fff
+	.container
+		+media-breakpoint-down(md)
+			width: calc(100% - 10px)
 	a
 		color: #333
 	.top-info-contacts
@@ -48,12 +51,20 @@ body
 		li:last-child
 			margin: 0 15px
 			margin-right: 0
-
 .top-navigation__wrapper
 	background-color: #363636
+	+media-breakpoint-down(md)
+		height: 100vh
+		width: 250px
+		position: absolute
+		z-index: 999
+		transform: translateX(-100%)
+		transition: .3s
 	.top-nav
 		ul
 			display: flex
+			+media-breakpoint-down(md)
+				display: block
 			li
 				a
 					display: block
@@ -65,6 +76,8 @@ body
 					font-weight: bold
 					+media-breakpoint-down(lg)
 						font-size: 14px
+					+media-breakpoint-down(md)
+						text-align: left
 					&:before
 						content: ''
 						position: absolute
@@ -96,6 +109,8 @@ body
 			justify-content: flex-end
 			align-items: center
 			height: inherit
+			+media-breakpoint-down(md)
+				justify-content: center
 			li
 				margin-left: 15px
 				font-size: 20px
@@ -105,6 +120,10 @@ body
 						color: $other-color
 	a
 		color: #fff
+.mobile-menu
+	font-size: 30px
+.active-mobile-menu
+	transform: translateX(0)
 .find-car-wrap
 	height: 110vh
 	min-height: 400px
@@ -124,10 +143,15 @@ body
 		color: #ffffff
 		+media-breakpoint-down(lg)
 			font-size: 56px
+		+media-breakpoint-down(md)
+			font-size: 45px
+			margin-bottom: 40px
 	p
 		color: #e4ebff
 		font-size: 24px
 		font-weight: 400
+		+media-breakpoint-down(md)
+			margin-bottom: 30px
 		i
 			font-size: 21px
 .select-wrap
@@ -135,15 +159,23 @@ body
 	display: flex
 	align-items: baseline
 	justify-content: center
+	+media-breakpoint-down(md)
+		flex-direction: column
+		width: 80%
+		margin: 0 auto
 .car-select
 	font-family: 'Montserrat Alternates', sans-serif
 	width: 210px
 	font-size: 18px
+	+media-breakpoint-down(md)
+		width: 100%
 	option
 		padding: 10px
 .jq-selectbox__dropdown
 	background-color: #fff
 	width: 210px
+	+media-breakpoint-down(md)
+		width: 100%
 	ul
 		max-height: 235px
 	li
@@ -155,6 +187,9 @@ body
 	text-align: left
 .jqselect:not(:last-child)
 	margin-right: 30px
+	+media-breakpoint-down(md)
+		margin: 0
+		margin-bottom: 10px
 .jq-selectbox__trigger
 	&:before
 		content: '\f107'
@@ -166,7 +201,9 @@ body
 		top: 50%
 		transform: translateY(-50%)
 		line-height: 0
-
+.search
+	+media-breakpoint-down(md)
+		width: 100%
 section
 	padding: 90px 0
 	h2
@@ -218,6 +255,8 @@ section
 		min-height: 220px
 		+media-breakpoint-down(lg)
 			padding: 25px 15px 25px 50px
+		+media-breakpoint-down(md)
+			margin-bottom: 30px
 		&:before
 			position: absolute
 			left: 33px
@@ -491,6 +530,9 @@ section
 		position: relative
 		transition: .3s
 		min-height: 275px
+		+media-breakpoint-down(md)
+			margin-bottom: 30px
+			min-height: 205px
 		&:before
 			position: absolute
 			content: attr(data-value)

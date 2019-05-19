@@ -8589,6 +8589,12 @@ body {
   background-color: #fff;
 }
 
+@media (max-width: 991px) {
+  .top-info .container {
+    width: calc(100% - 10px);
+  }
+}
+
 .top-info a {
   color: #333;
 }
@@ -8618,8 +8624,25 @@ body {
   background-color: #363636;
 }
 
+@media (max-width: 991px) {
+  .top-navigation__wrapper {
+    height: 100vh;
+    width: 250px;
+    position: absolute;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: .3s;
+  }
+}
+
 .top-navigation__wrapper .top-nav ul {
   display: flex;
+}
+
+@media (max-width: 991px) {
+  .top-navigation__wrapper .top-nav ul {
+    display: block;
+  }
 }
 
 .top-navigation__wrapper .top-nav ul li a {
@@ -8635,6 +8658,12 @@ body {
 @media (max-width: 1199px) {
   .top-navigation__wrapper .top-nav ul li a {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-navigation__wrapper .top-nav ul li a {
+    text-align: left;
   }
 }
 
@@ -8678,6 +8707,12 @@ body {
   height: inherit;
 }
 
+@media (max-width: 991px) {
+  .top-navigation__wrapper .social-wrap .social {
+    justify-content: center;
+  }
+}
+
 .top-navigation__wrapper .social-wrap .social li {
   margin-left: 15px;
   font-size: 20px;
@@ -8693,6 +8728,14 @@ body {
 
 .top-navigation__wrapper a {
   color: #fff;
+}
+
+.mobile-menu {
+  font-size: 30px;
+}
+
+.active-mobile-menu {
+  transform: translateX(0);
 }
 
 .find-car-wrap {
@@ -8726,10 +8769,23 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .find-car-wrap h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+}
+
 .find-car-wrap p {
   color: #e4ebff;
   font-size: 24px;
   font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .find-car-wrap p {
+    margin-bottom: 30px;
+  }
 }
 
 .find-car-wrap p i {
@@ -8743,10 +8799,24 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 991px) {
+  .select-wrap {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .car-select {
   font-family: 'Montserrat Alternates', sans-serif;
   width: 210px;
   font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .car-select {
+    width: 100%;
+  }
 }
 
 .car-select option {
@@ -8756,6 +8826,12 @@ body {
 .jq-selectbox__dropdown {
   background-color: #fff;
   width: 210px;
+}
+
+@media (max-width: 991px) {
+  .jq-selectbox__dropdown {
+    width: 100%;
+  }
 }
 
 .jq-selectbox__dropdown ul {
@@ -8777,6 +8853,13 @@ body {
   margin-right: 30px;
 }
 
+@media (max-width: 991px) {
+  .jqselect:not(:last-child) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .jq-selectbox__trigger:before {
   content: '\f107';
   position: absolute;
@@ -8787,6 +8870,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
   line-height: 0;
+}
+
+@media (max-width: 991px) {
+  .search {
+    width: 100%;
+  }
 }
 
 section {
@@ -8860,6 +8949,12 @@ section h2 {
 @media (max-width: 1199px) {
   .choose-us .advent {
     padding: 25px 15px 25px 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .choose-us .advent {
+    margin-bottom: 30px;
   }
 }
 
@@ -9263,6 +9358,13 @@ section h2 {
   position: relative;
   transition: .3s;
   min-height: 275px;
+}
+
+@media (max-width: 991px) {
+  .we-work-item {
+    margin-bottom: 30px;
+    min-height: 205px;
+  }
 }
 
 .we-work-item:before {
