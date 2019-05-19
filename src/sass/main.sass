@@ -146,6 +146,8 @@ body
 		+media-breakpoint-down(md)
 			font-size: 45px
 			margin-bottom: 40px
+		+media-breakpoint-down(xs)
+			margin-bottom: 10px
 	p
 		color: #e4ebff
 		font-size: 24px
@@ -163,6 +165,8 @@ body
 		flex-direction: column
 		width: 80%
 		margin: 0 auto
+	+media-breakpoint-down(xs)
+		width: 95%
 .car-select
 	font-family: 'Montserrat Alternates', sans-serif
 	width: 210px
@@ -298,6 +302,9 @@ section
 				font-size: 14px
 			+media-breakpoint-down(sm)
 				text-align: center
+			+media-breakpoint-down(xs)
+				font-size: 18px
+			
 
 .popular-cars
 	&__item
@@ -311,7 +318,9 @@ section
 			height: 220px
 			overflow: hidden
 			+media-breakpoint-down(lg)
-			height: 170px
+				height: 170px
+			+media-breakpoint-down(xs)
+				height: 300px
 			img
 				object-fit: cover
 				width: 100%
@@ -386,6 +395,8 @@ section
 		border: 1px solid #ddd
 		padding: 50px 0 20px
 		position: relative
+		+media-breakpoint-down(xs)
+			padding: 50px 0
 		&:before
 			content: ''
 			position: absolute
@@ -409,13 +420,19 @@ section
 			font-size: 24px
 			margin-bottom: 5px
 			margin-top: 15px
+			+media-breakpoint-down(xs)
+				font-size: 35px
 		p
 			line-height: 1
 			color: $other-color
 			margin-bottom: 10px
+			+media-breakpoint-down(xs)
+				font-size: 22px
 		a
 			text-decoration: underline
 			text-transform: uppercase
+			+media-breakpoint-down(xs)
+				font-size: 22px
 
 .about-us
 	background-color: #333333
@@ -577,12 +594,17 @@ section
 			text-transform: capitalize
 			font-size: 22px
 			transition: .3s
+			+media-breakpoint-down(xs)
+				font-size: 28px
 			&:hover
 				color: $other-color
 		p
 			font-size: 13px
 			margin-bottom: 5px
 			color: #5d5d5d
+			+media-breakpoint-down(xs)
+				font-size: 18px
+			
 .faq
 	background-color: #f7f7f7
 	.btn-question
@@ -666,11 +688,13 @@ section
 footer
 	background-color: #333
 	color: #ffffff !important
-	padding: 75px
+	padding: 75px 0
 	h3
 		text-transform: uppercase
 		font-size: 20px
 		margin-bottom: 20px
+		+media-breakpoint-down(xs)
+			margin-top: 30px
 	li
 		margin-bottom: 7px
 		i
@@ -691,6 +715,8 @@ footer
 	.social
 		display: flex
 		justify-content: center
+		+media-breakpoint-down(xs)
+			justify-content: flex-end
 		a
 			color: #9b9b9b
 			font-size: 18px
@@ -701,6 +727,8 @@ footer
 		text-align: right
 		display: block
 		color: #9b9b9b
+		+media-breakpoint-down(xs)
+			text-align: center
 		&:hover
 			color: $other-color
 .ta-r

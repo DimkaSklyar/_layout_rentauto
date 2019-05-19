@@ -8776,6 +8776,12 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .find-car-wrap h1 {
+    margin-bottom: 10px;
+  }
+}
+
 .find-car-wrap p {
   color: #e4ebff;
   font-size: 24px;
@@ -8804,6 +8810,12 @@ body {
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .select-wrap {
+    width: 95%;
   }
 }
 
@@ -9045,6 +9057,12 @@ section h2 {
   }
 }
 
+@media (max-width: 575px) {
+  .choose-us .advent p {
+    font-size: 18px;
+  }
+}
+
 .popular-cars__item {
   border: 1px solid #e1e1e1;
   padding: 18px 22px;
@@ -9061,7 +9079,18 @@ section h2 {
 .popular-cars__item__img {
   height: 220px;
   overflow: hidden;
-  height: 170px;
+}
+
+@media (max-width: 1199px) {
+  .popular-cars__item__img {
+    height: 170px;
+  }
+}
+
+@media (max-width: 575px) {
+  .popular-cars__item__img {
+    height: 300px;
+  }
 }
 
 .popular-cars__item__img img {
@@ -9167,6 +9196,12 @@ section h2 {
   position: relative;
 }
 
+@media (max-width: 575px) {
+  .type-auto__text {
+    padding: 50px 0;
+  }
+}
+
 .type-auto__text:before {
   content: '';
   position: absolute;
@@ -9196,15 +9231,33 @@ section h2 {
   margin-top: 15px;
 }
 
+@media (max-width: 575px) {
+  .type-auto__text h4 {
+    font-size: 35px;
+  }
+}
+
 .type-auto__text p {
   line-height: 1;
   color: #247bdd;
   margin-bottom: 10px;
 }
 
+@media (max-width: 575px) {
+  .type-auto__text p {
+    font-size: 22px;
+  }
+}
+
 .type-auto__text a {
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+@media (max-width: 575px) {
+  .type-auto__text a {
+    font-size: 22px;
+  }
 }
 
 .about-us {
@@ -9453,6 +9506,12 @@ section h2 {
   transition: .3s;
 }
 
+@media (max-width: 575px) {
+  .we-work-item h4 {
+    font-size: 28px;
+  }
+}
+
 .we-work-item h4:hover {
   color: #247bdd;
 }
@@ -9461,6 +9520,12 @@ section h2 {
   font-size: 13px;
   margin-bottom: 5px;
   color: #5d5d5d;
+}
+
+@media (max-width: 575px) {
+  .we-work-item p {
+    font-size: 18px;
+  }
 }
 
 .faq {
@@ -9573,13 +9638,19 @@ section h2 {
 footer {
   background-color: #333;
   color: #ffffff !important;
-  padding: 75px;
+  padding: 75px 0;
 }
 
 footer h3 {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  footer h3 {
+    margin-top: 30px;
+  }
 }
 
 footer li {
@@ -9616,6 +9687,12 @@ footer .btn {
   justify-content: center;
 }
 
+@media (max-width: 575px) {
+  .copyright .social {
+    justify-content: flex-end;
+  }
+}
+
 .copyright .social a {
   color: #9b9b9b;
   font-size: 18px;
@@ -9630,6 +9707,12 @@ footer .btn {
   text-align: right;
   display: block;
   color: #9b9b9b;
+}
+
+@media (max-width: 575px) {
+  .copyright .usl {
+    text-align: center;
+  }
 }
 
 .copyright .usl:hover {
