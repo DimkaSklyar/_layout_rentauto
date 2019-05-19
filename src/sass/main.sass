@@ -257,6 +257,8 @@ section
 			padding: 25px 15px 25px 50px
 		+media-breakpoint-down(md)
 			margin-bottom: 30px
+		+media-breakpoint-down(sm)
+			padding: 40px 10px 10px 10px
 		&:before
 			position: absolute
 			left: 33px
@@ -266,11 +268,18 @@ section
 			font-size: 28px
 			+media-breakpoint-down(lg)
 				top: 25px
+			+media-breakpoint-down(sm)
+				left: 50%
+				transform: translateX(-50%)
+				top: 10px
 		&.star:before
 			content: '\f005'
 		&.location:before
 			content: '\f041'
 			left: 37px
+			+media-breakpoint-down(sm)
+				left: 50%
+				transform: translateX(-50%)
 		&.proffi:before
 			content: '\f185'
 		&:hover
@@ -281,10 +290,14 @@ section
 			position: relative
 			+media-breakpoint-down(lg)
 				font-size: 24px
+			+media-breakpoint-down(sm)
+				text-align: center
 		p
 			color: #9b9b9b
 			+media-breakpoint-down(lg)
 				font-size: 14px
+			+media-breakpoint-down(sm)
+				text-align: center
 
 .popular-cars
 	&__item
@@ -348,6 +361,8 @@ section
 		text-align: center
 		position: relative
 		margin-top: 60px
+		+media-breakpoint-down(sm)
+			margin-bottom: 40px
 		.icon
 			font-size: 48px
 			background-color: #fff
@@ -419,6 +434,8 @@ section
 	.about-us__wrap
 		padding-left: 30px
 		padding-right: 30px
+		+media-breakpoint-down(sm)
+			margin-bottom: 30px
 	.btn
 		margin-top: auto
 		display: inline-block
@@ -461,6 +478,8 @@ section
 			transition: .3s
 			outline-offset: 0px
 			outline: 1px solid rgba(255, 255, 255, 0)
+			+media-breakpoint-down(sm)
+				margin-bottom: 30px
 			img
 				width: 100%
 				transition: .3s
@@ -582,6 +601,7 @@ section
 		font-weight: 400
 		position: relative
 		display: inline-block
+		padding-right: 50px
 		&:hover
 			color: $other-color
 		&:before
@@ -685,8 +705,13 @@ footer
 			color: $other-color
 .ta-r
 	text-align: right
+	+media-breakpoint-down(sm)
+		text-align-last: left
+		margin-top: 20px
+	
 .pl-3
 	padding-left: 30px
+
 /*==========  user style  ==========*/
 .parallax
 	min-height: 400px

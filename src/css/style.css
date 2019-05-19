@@ -8958,6 +8958,12 @@ section h2 {
   }
 }
 
+@media (max-width: 767px) {
+  .choose-us .advent {
+    padding: 40px 10px 10px 10px;
+  }
+}
+
 .choose-us .advent:before {
   position: absolute;
   left: 33px;
@@ -8973,6 +8979,14 @@ section h2 {
   }
 }
 
+@media (max-width: 767px) {
+  .choose-us .advent:before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+}
+
 .choose-us .advent.star:before {
   content: '\f005';
 }
@@ -8980,6 +8994,13 @@ section h2 {
 .choose-us .advent.location:before {
   content: '\f041';
   left: 37px;
+}
+
+@media (max-width: 767px) {
+  .choose-us .advent.location:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .choose-us .advent.proffi:before {
@@ -9002,6 +9023,12 @@ section h2 {
   }
 }
 
+@media (max-width: 767px) {
+  .choose-us .advent h4 {
+    text-align: center;
+  }
+}
+
 .choose-us .advent p {
   color: #9b9b9b;
 }
@@ -9009,6 +9036,12 @@ section h2 {
 @media (max-width: 1199px) {
   .choose-us .advent p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .choose-us .advent p {
+    text-align: center;
   }
 }
 
@@ -9099,6 +9132,12 @@ section h2 {
   text-align: center;
   position: relative;
   margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .type-auto__item {
+    margin-bottom: 40px;
+  }
 }
 
 .type-auto__item .icon {
@@ -9194,6 +9233,12 @@ section h2 {
   padding-right: 30px;
 }
 
+@media (max-width: 767px) {
+  .about-us .about-us__wrap {
+    margin-bottom: 30px;
+  }
+}
+
 .about-us .btn {
   margin-top: auto;
   display: inline-block;
@@ -9258,6 +9303,12 @@ section h2 {
   transition: .3s;
   outline-offset: 0px;
   outline: 1px solid rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 767px) {
+  .about-us .brands-items .brand {
+    margin-bottom: 30px;
+  }
 }
 
 .about-us .brands-items .brand img {
@@ -9432,6 +9483,7 @@ section h2 {
   font-weight: 400;
   position: relative;
   display: inline-block;
+  padding-right: 50px;
 }
 
 .faq .btn-question:hover {
@@ -9586,6 +9638,13 @@ footer .btn {
 
 .ta-r {
   text-align: right;
+}
+
+@media (max-width: 767px) {
+  .ta-r {
+    text-align-last: left;
+    margin-top: 20px;
+  }
 }
 
 .pl-3 {

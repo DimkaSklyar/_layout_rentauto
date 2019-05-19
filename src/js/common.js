@@ -62,7 +62,7 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: false
       },
       600: {
         items: 1,
