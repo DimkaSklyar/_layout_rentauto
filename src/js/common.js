@@ -33,6 +33,11 @@ $('#retalForm').submit(function (e) {
   AjaxFormRequest('messegeResult-feedback', 'retalForm', './order.php');
 });
 
+$("#feedback").submit(function (e) { 
+  e.preventDefault();
+  AjaxFormRequest('message-result', 'feedback', './feedback.php');
+});
+
 function mask(event) {
   var matrix = "+7 (___) ___ __ __",
     i = 0,

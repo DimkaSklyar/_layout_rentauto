@@ -9967,6 +9967,137 @@ footer .btn {
   top: 10px;
 }
 
+.page-contacts {
+  padding: 0 50px 75px;
+}
+
+.page-contacts .container {
+  margin-top: 75px;
+}
+
+.page-contacts .contact-item-wrap {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  transition: .6s;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.page-contacts .contact-item-wrap:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+  border: none;
+  border: 1px solid transparent;
+}
+
+.page-contacts .contact-item-wrap:hover .box-contacts-decor {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  transition: margin .6s ease,width .6s ease-in-out;
+}
+
+.page-contacts .contact-item-wrap i {
+  color: #247bdd;
+  font-size: 60px;
+}
+
+.page-contacts .contact-item-wrap a {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.page-contacts .box-contacts-decor {
+  margin: 30px auto;
+  height: 2px;
+  max-width: 100px;
+  background: #247bdd;
+  transition: all .6s ease-in-out;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  width: 0;
+}
+
+.page-contacts .input-wrap {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .page-contacts .input-wrap {
+    display: block;
+  }
+}
+
+.page-contacts .input-wrap input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none 0;
+  background-color: #f7f7f7;
+  margin-bottom: 15px;
+}
+
+.page-contacts .input-wrap input:not(:first-child) {
+  margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .page-contacts .input-wrap input:not(:first-child) {
+    margin-left: 0px;
+  }
+}
+
+.page-contacts textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none 0;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.page-contacts .btn {
+  padding: 19px 35px 17px;
+  cursor: pointer;
+}
+
+.page-contacts .wrap-form-header {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-contacts .wrap-form-header h2 {
+  flex: 2;
+  padding-right: 20px;
+  border-right: 2px solid #247bdd;
+  line-height: 1.6;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .page-contacts .wrap-form-header h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-contacts .wrap-form-header h2 {
+    font-size: 20px;
+  }
+}
+
+.page-contacts .wrap-form-header p {
+  flex: 5;
+  padding-left: 20px;
+}
+
 /*==========  user style  ==========*/
 .parallax {
   min-height: 400px;
