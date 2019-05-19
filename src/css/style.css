@@ -9806,6 +9806,14 @@ footer .btn {
   }
 }
 
+.page-price .container {
+  overflow: hidden;
+}
+
+.page-price .row {
+  overflow: auto;
+}
+
 .page-price .price-wrap {
   padding: 75px 0;
 }
@@ -9818,6 +9826,7 @@ footer .btn {
     .page-price .price-wrap table td {
   padding: 20px 15px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .page-price .price-wrap table th {
@@ -9852,6 +9861,110 @@ footer .btn {
 
 .page-price .price-wrap table tr:hover {
   background-color: rgba(36, 123, 221, 0.2);
+}
+
+.page-contiditions {
+  padding: 75px 0;
+}
+
+.page-contiditions ol {
+  font-weight: bold;
+}
+
+.page-contiditions ol h2 {
+  font-size: 18px;
+}
+
+.page-contiditions ul {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.page-about-us {
+  padding: 75px 0;
+  line-height: 1.9;
+}
+
+.page-about-us h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #247bdd;
+}
+
+.page-about-us .banner {
+  max-height: 450px;
+  overflow: hidden;
+  margin: 35px 0;
+}
+
+@media (max-width: 1199px) {
+  .page-about-us .banner {
+    max-height: 550px;
+  }
+}
+
+.page-about-us .banner-img {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.page-about-us .banner-img img {
+  height: 100%;
+}
+
+.page-about-us .banner-text {
+  background-color: #333;
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  padding: 40px 30px;
+}
+
+.page-about-us .banner-text h3 {
+  font-size: 1.5em;
+}
+
+.page-about-us .banner-text p:nth-child(2) {
+  color: #247bdd;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.page-about-us .bron {
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.bron-wrap {
+  text-align: center;
+}
+
+.bron-wrap h2 {
+  text-align: left;
+}
+
+.list__marker {
+  text-align: left;
+}
+
+.list__marker li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.list__marker li:before {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  content: '';
+  background-color: #6f6f6f;
+  border-radius: 50%;
+  left: 10px;
+  top: 10px;
 }
 
 /*==========  user style  ==========*/

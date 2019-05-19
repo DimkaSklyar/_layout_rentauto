@@ -238,3 +238,6 @@ $('.popup-with-zoom-anim').magnificPopup({
   mainClass: 'my-mfp-zoom-in'
 });
 
+$(".auto-bron").click(function () { 
+  $("#inputCar").val($(this).attr('data-name'));
+})

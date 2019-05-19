@@ -784,6 +784,10 @@ footer
 
 
 .page-price
+	.container
+		overflow: hidden
+	.row
+		overflow: auto
 	.price-wrap
 		padding: 75px 0
 		table
@@ -792,6 +796,7 @@ footer
 			td
 				padding: 20px 15px
 				text-align: center
+				white-space: nowrap
 			th
 				background-color: #000
 				color: #fff
@@ -810,6 +815,72 @@ footer
 				transition: .3s
 				&:hover
 					background-color: rgba(36, 123, 221, 0.2)
+
+.page-contiditions
+	padding: 75px 0
+	ol
+		font-weight: bold
+		h2
+			font-size: 18px
+	ul
+		font-weight: normal
+		margin-bottom: 30px
+
+.page-about-us
+	padding: 75px 0
+	line-height: 1.9
+	h2
+		font-size: 30px
+		text-transform: uppercase
+		margin-bottom: 30px
+		color: $other-color
+	.banner
+		max-height: 450px
+		overflow: hidden
+		margin: 35px 0
+		+media-breakpoint-down(lg)
+			max-height: 550px
+	.banner-img
+		overflow: hidden
+		display: flex
+		align-items: center
+		img
+			height: 100%
+	.banner-text
+		background-color: #333
+		height: 100%
+		color: #fff
+		text-align: right
+		padding: 40px 30px
+		h3
+			font-size: 1.5em
+		p:nth-child(2)
+			color: $other-color
+			font-weight: bold
+			margin: 40px 0
+	.bron
+		margin: 0 auto
+		display: inline-block
+		margin-top: 30px
+.bron-wrap
+	text-align: center
+	h2
+		text-align: left
+.list__marker
+	text-align: left
+	li
+		position: relative
+		padding-left: 35px
+		margin-bottom: 10px
+		&:before
+			position: absolute
+			width: 9px
+			height: 9px
+			content: ''
+			background-color: #6f6f6f
+			border-radius: 50%
+			left: 10px
+			top: 10px
 /*==========  user style  ==========*/
 .parallax
 	min-height: 400px
