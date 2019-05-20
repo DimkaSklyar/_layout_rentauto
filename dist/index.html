@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+		rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:200,300,400,600,700&amp;subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Главная</title>
+</head>
+
+<body>
+	<header>
+		<div class="top-info">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-1 d-lg-none d-xl-none">
+						<a href="#" class="mobile-menu" id="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-md-4 col-5 mr-auto">
+						<a href="index.html">
+							<div class="top-logo">
+								<img src="img/logo.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-5 col-md-7 col-6">
+						<ul class="top-info-contacts">
+							<li class="d-none d-md-block">
+								<span class="timework">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> 09:00-20:00
+								</span>
+							</li>
+							<li>
+								<a href="tel:+71234567890"><i class="fa fa-phone" aria-hidden="true"></i> +7 (123) 45-67-890</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-navigation__wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 ">
+						<nav class="top-nav">
+							<ul>
+								<li><a href="index.html" class="active">Главная</a></li>
+								<li><a href="cars.html">Машины</a></li>
+								<li><a href="price.html">Тарифы</a></li>
+								<li><a href="conditions.html">Условия проката</a></li>
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-2">
+						<div class="social-wrap">
+							<ul class="social">
+								<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="find-car-wrap" data-parallax="scroll" data-image-src="img/bcg-header.jpg">
+			<div class="container find-car-container">
+				<div class="find-car-inner">
+					<h1>В поисках Лучшего Авто</h1>
+					<p>От 1000<i class="fa fa-rub" aria-hidden="true"></i> в день на комфортном автомобиле</p>
+					<div class="select-wrap">
+						<select name="namecar" id="namecar" class="car-select">
+							<option value="all">Все марки</option>
+							<option value=".hyundai">Hyundai</option>
+							<option value=".volkswagen">Volkswagen</option>
+							<option value=".ravon">Ravon</option>
+							<option value=".kia">Kia</option>
+							<option value=".ford">Ford</option>
+							<option value=".nissan">Nissan</option>
+							<option value=".сhevrolet">Chevrolet</option>
+							<option value=".toyota">Toyota</option>
+							<option value=".mercedes">Mercedes</option>
+							<option value=".citroen">Citroen</option>
+							<option value=".audi">Audi</option>
+							<option value=".tesla">Tesla</option>
+						</select>
+						<select name="typecar" id="typecar" class="car-select">
+							<option value="all">Все типы</option>
+							<option value=".sedan">Седан</option>
+							<option value=".hetchbek">Хэтчбек</option>
+							<option value=".jeep">Кроссовер</option>
+							<option value=".universal">Универсал</option>
+						</select>
+						<select name="namecar" id="sort" class="car-select">
+							<option value="order:asc">По возрастанию</option>
+							<option value="order:desc">По убыванию</option>
+						</select>
+						<a href="#showCars" class="btn btn-blue search" id="showCars">Показать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="cars" id="car-section">
+			<div class="container">
+				<h2>Наши автомибили</h2>
+				<div class="row container-mix">
+					<div class="col-md-4 col-sm-6 col-12 mix kia sedan" data-order="1600">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-1.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Kia Rio</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1600</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix ravon sedan" data-order="1400">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-2.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Ravon R3</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-92</li>
+											<li>Мощность : 106 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1400</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix volkswagen sedan" data-order="1700">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-3.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Volkswagen Polo</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 110 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1700</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix hyundai sedan" data-order="1800">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-4.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Hyundai Solaris</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1800</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix ford hetchbek" data-order="1900">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-5.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Ford Focus</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 125 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">1900</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix nissan sedan" data-order="2000">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-6.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Nissan Sentra</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 117 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">2000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix hyundai jeep" data-order="2900">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-7.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Hyundai Creta</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">2900</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix сhevrolet universal" data-order="3300">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-8.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Chevrolet Orlando</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 163 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">3300</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix toyota sedan" data-order="3800">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-9.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Toyota Camry</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 150 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">3800</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix kia sedan" data-order="4000">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-10.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Kia Optioma</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 187 л.с.</li>
+											<li>Кондиционер : есть</li>
+										</ul>
+									</div>
+									<p>От <span class="price">4000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix mercedes sedan" data-order="5000">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-11.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Mercedes Е200</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 184 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">5000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix mercedes sedan" data-order="6500">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-12.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Mercedes С180</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 184 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">6500</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix citroen hetchbek" data-order="2500">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-13.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Citroen C4</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 123 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">2500</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix audi sedan" data-order="5500">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-14.jpg" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Audi A6</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : бензин АИ-95</li>
+											<li>Мощность : 168 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">5500</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12 mix tesla sedan" data-order="35000">
+						<div class="car-wrap">
+							<div class="car-item">
+								<a class="popup-with-zoom-anim" href="#small-dialog">
+									<div class="car-item__img">
+										<img src="img/cars/cars-15.png" alt="">
+									</div>
+								</a>
+								<div class="car-item__text">
+									<a class="popup-with-zoom-anim" href="#small-dialog">
+										<h3>Tesla Model S</h3>
+									</a>
+									<div class="d-none d-1">
+										<ul>
+											<li>Коробка передач : автоматическая</li>
+											<li>Кол-во дверей : 5</li>
+											<li>Вид топлива : Электрокар</li>
+											<li>Мощность : 362 л.с.</li>
+											<li>Кондиционер : климат-контроль</li>
+										</ul>
+									</div>
+									<p>От <span class="price">35000</span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mixitup-page-list"></div>
+			</div>
+		</section>
+		<section class="choose-us">
+			<div class="container">
+				<h2>Почему Нас Выбирают?</h2>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 col-12">
+						<div class="advent star">
+							<h4>Сервис</h4>
+							<p>ПрокАвто предоставляет качественный сервис всем, кто ищет надежный прокат автомобилей.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-12">
+						<div class="advent location">
+							<h4>Расположение</h4>
+							<p>У нас есть множество офисов проката автомобилей, расположенных по всей территории РФ.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-12">
+						<div class="advent proffi">
+							<h4>Профессионалы</h4>
+							<p>Вы можете полностью положиться на нашу команду профессионалов, которые всегда готовы вам помочь.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="popular-cars">
+			<div class="container">
+				<h2>Популярные Авто</h2>
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<article class="popular-cars__item">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+										<div class="popular-cars__item__img">
+											<img src="img/cars/cars-3.jpg" alt="">
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<div class="popular-cars__item__text">
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Volkswagen Polo</h3>
+										</a>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 110 л.с.</li>
+												<li>Кондиционер : есть</li>
+											</ul>
+										</div>
+										<strong><span class="price">1700</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-6 col-12">
+						<article class="popular-cars__item">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+										<div class="popular-cars__item__img">
+											<img src="img/cars/cars-5.jpg" alt="">
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<div class="popular-cars__item__text">
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Ford Focus</h3>
+										</a>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 125 л.с.</li>
+												<li>Кондиционер : есть</li>
+											</ul>
+										</div>
+										<strong><span class="price">1900</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-6 col-12">
+						<article class="popular-cars__item">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+										<div class="popular-cars__item__img">
+											<img src="img/cars/cars-9.jpg" alt="">
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<div class="popular-cars__item__text">
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Toyota Camry</h3>
+										</a>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 150 л.с.</li>
+												<li>Кондиционер : климат-контроль</li>
+											</ul>
+										</div>
+										<strong><span class="price">3800</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-6 col-12">
+						<article class="popular-cars__item">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+										<div class="popular-cars__item__img">
+											<img src="img/cars/cars-11.jpg" alt="">
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-6 col-12">
+									<div class="popular-cars__item__text">
+										<a class="popup-with-zoom-anim popular-cars-show" href="#small-dialog">
+											<h3>Mercedes Е200</h3>
+										</a>
+										<div class="d-none d-1">
+											<ul>
+												<li>Коробка передач : автоматическая</li>
+												<li>Кол-во дверей : 5</li>
+												<li>Вид топлива : бензин АИ-95</li>
+												<li>Мощность : 184 л.с.</li>
+												<li>Кондиционер : климат-контроль</li>
+											</ul>
+										</div>
+										<strong><span class="price">5000</span><i class="fa fa-rub" aria-hidden="true"></i> / День</strong>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="type-auto">
+			<div class="container">
+				<h2>Найдите Ваш Тип Авто</h2>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="type-auto__item">
+							<div class="icon">
+								<i class="fa fa-car" aria-hidden="true"></i>
+							</div>
+							<div class="type-auto__text">
+								<h4>Седан</h4>
+								<p><span class="count">11</span> автомобилей</p>
+								<a href="#car-section" id="showSedan">Посмотреть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="type-auto__item">
+							<div class="icon">
+								<i class="fa fa-rocket" aria-hidden="true"></i>
+							</div>
+							<div class="type-auto__text">
+								<h4>Хэтчбек</h4>
+								<p><span class="count">2</span> автомобиля</p>
+								<a href="#car-section" id="showHetchback">Посмотреть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="type-auto__item">
+							<div class="icon">
+								<i class="fa fa-truck" aria-hidden="true"></i>
+							</div>
+							<div class="type-auto__text">
+								<h4>Кроссовер</h4>
+								<p><span class="count">1</span> автомобиль</p>
+								<a href="#car-section" id="showCross">Посмотреть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="type-auto__item">
+							<div class="icon">
+								<i class="fa fa-bus" aria-hidden="true"></i>
+							</div>
+							<div class="type-auto__text">
+								<h4>Универсал</h4>
+								<p><span class="count">1</span> автомобиль</p>
+								<a href="#car-section" id="showUniversal">Посмотреть</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 d-none d-xl-block">
+						<div class="about-us__img">
+							<img src="img/section-about-us-bcg.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-7 col-12 about-us__wrap">
+						<div class="about-us__text">
+							<h3>Более 15 лет на рынке</h3>
+							<p>Имея более чем 15-летний опыт работы, наша команда предлагает качественные услуги проката автомобилей
+								всем гостям и жителям РФ.</p>
+						</div>
+						<a href="#car-section" class="btn showAllCars">Показать авто</a>
+					</div>
+					<div class="col-xl-4 col-md-5 col-12">
+						<div class="row">
+							<div class="col-6 count-wrap">
+								<div class="count">
+									<span class="count-value">20</span><span class="count-tousand">к</span>
+								</div>
+								<b>Счастливых клиентов</b>
+							</div>
+							<div class="col-6 count-wrap">
+								<div class="count">
+									<span class="count-value">4</span>
+								</div>
+								<b>Типа автомибилей</b>
+							</div>
+							<div class="col-6 count-wrap">
+								<div class="count">
+									<span class="count-value">3</span><span class="count-tousand">к</span>
+								</div>
+								<b>Автомобилей</b>
+							</div>
+							<div class="col-6 count-wrap">
+								<div class="count">
+									<span class="count-value">12</span>
+								</div>
+								<b>Брендов</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row brands-items">
+					<div class="col-md-3 col-6 brand-wrap">
+						<a href="#car-section" id="showMercedes">
+							<div class="brand">
+								<img src="img/brans/brands-1.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-6 brand-wrap">
+						<a href="#car-section" id="showAudi">
+							<div class="brand">
+								<img src="img/brans/brands-2.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-6 brand-wrap">
+						<a href="#car-section" id="showTesla">
+							<div class="brand">
+								<img src="img/brans/brands-3.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-6 brand-wrap">
+						<a href="#car-section" id="showCitroen">
+							<div class="brand">
+								<img src="img/brans/brands-4.png" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="happy-clients">
+			<div class="container">
+				<h2>Счастливые клиенты</h2>
+				<div class="row owl-carousel m-0">
+					<div class="col">
+						<article class="review-item ">
+							<div class="review-item-info row align-items-center">
+								<div class="review-item-info__img col-2">
+									<img src="img/reviews/human-1.jpg" alt="">
+								</div>
+								<div class="review-item-info__name col-10">
+									<h3>Иван Васильев</h3>
+									<span>Постоянный клиент</span>
+								</div>
+								<p class="review-item-info__content col-12">
+									Я арендовал автомобиль довольно много раз в Москве и не могу винить ни одну из услуг. Ваш персонал
+									замечательный, процесс простой, а цены очень доступные. Я рад рекомендовать ваши услуги!
+								</p>
+							</div>
+						</article>
+					</div>
+					<div class="col">
+						<article class="review-item ">
+							<div class="review-item-info row align-items-center">
+								<div class="review-item-info__img col-2">
+									<img src="img/reviews/human-2.jpg" alt="">
+								</div>
+								<div class="review-item-info__name col-10">
+									<h3>Алиса Кондратюк</h3>
+									<span>Новый клиент</span>
+								</div>
+								<p class="review-item-info__content col-12">
+									Это мое второе бронирование у вас. Вы не только лучшие на побережье, но у вас лучшие цены! а также
+									самый дружелюбный персонал. Я обязательно ещё раз возьму машину напрокат в вашей компании.
+								</p>
+							</div>
+						</article>
+					</div>
+					<div class="col">
+						<article class="review-item">
+							<div class="review-item-info row align-items-center">
+								<div class="review-item-info__img col-2">
+									<img src="img/reviews/human-3.jpg" alt="">
+								</div>
+								<div class="review-item-info__name col-10">
+									<h3>Константин Иванчук</h3>
+									<span>Постоянный клиент</span>
+								</div>
+								<p class="review-item-info__content col-12">
+									ПрокАвто-одна из лучших компаний по прокату автомобилей в нашем городе. У меня был фантастический опыт
+									с ними в этом году. Они предоставили мне надежный и доступный автомобиль, который был именно тем, что
+									я просил.
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="we-work">
+			<div class="container">
+				<h2>Как мы работем</h2>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="we-work-item" data-value="01">
+							<span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+							<h4>Выбирать авто</h4>
+							<p>Во-первых, вам нужно найти и выбрать предпочтительный автомобиль в нашем онлайн-каталоге.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="we-work-item" data-value="02">
+							<span class="icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+							<h4>Выбирать услуги</h4>
+							<p>Выберите нужную суточную норму для вашего автомобиля, чтобы рассчитать стоимость аренды.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="we-work-item" data-value="03">
+							<span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>
+							<h4>Получить авто</h4>
+							<p>Вы можете получить выбранный автомобиль в одном из наших ближайших офисов.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="we-work-item" data-value="04">
+							<span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+							<h4>Вернуть авто</h4>
+							<p>Когда время аренды закончится, вам придется вернуть автомобиль в наш офис.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faq">
+			<div class="container">
+				<h2>Часто Задаваемые Вопросы</h2>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="question">
+							<div class="panel-heading in">
+								<a href="#collapse" class="btn-question">Какие документы нужны?</a>
+							</div>
+							<div class="panel-collapse show">
+								<div class="question-body">
+									<ul>
+										<li>Паспорт гражданина РФ.</li>
+										<li>Водительское удостоверение установленного образца.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="question">
+							<div class="panel-heading">
+								<a href="#collapse" class="btn-question">Возможно ли получить авто в аэропорту?</a>
+							</div>
+							<div class="panel-collapse">
+								<div class="question-body">
+									<p>
+										Да, наша компания предоставляет данную услугу. Наши менеджеры встретят вас на выходе из здания
+										аэровокзала. Предоставят автомобиль, договор аренды, акт приема-передачи.
+										При бронировании автомобиля более чем на 2 суток услуга подачи авто в аэропорт абсолютна бесплатна.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="question">
+							<div class="panel-heading">
+								<a href="#collapse" class="btn-question">Когда и сколько платить за аренду машины?</a>
+							</div>
+							<div class="panel-collapse">
+								<div class="question-body">
+									<p>
+										Оплата происходит после того как арендатор визуально осмотрит автомобиль, подпишет договор и акт
+										приема-передачи транспортного средства.
+										Существует правило 100% предоплаты предполагаемого срока проката авто.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="video-bcg">
+							<img src="img/video-bcg.jpg" alt="">
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=ETPDhl22dII">
+								<div class="btn-play">
+									<i class="fa fa-play" aria-hidden="true"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-3 col-md-12">
+					<h3>О нас</h3>
+					<p>Наша компания более 15 лет предлагает самый доступный по условиям прокат автомобилей по всей территории РФ.
+						Мы удерживаем низкие цены на аренду благодаря годами отлаженной схеме. </p>
+				</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+					<h3>Навигация</h3>
+					<ul>
+						<li><a href="index.html" class="active">Главная</a></li>
+						<li><a href="cars.html">Машины</a></li>
+						<li><a href="price.html">Тарифы</a></li>
+						<li><a href="conditions.html">Условия проката</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+					<h3>Контакты</h3>
+					<ul>
+						<li><a href="tel:+71234567890"><i class="fa fa-phone" aria-hidden="true"></i> +7 (123) 45-67-890</a></li>
+						<li><a href="mailto:site@info.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>site@info.ru</a></li>
+						<li><i class="fa fa-location-arrow" aria-hidden="true"></i> г. Краснодар ул. Мачуги, 14</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-12 ta-r">
+					<h3>Найди свой автомобиль</h3>
+					<p>Прокат автой, по лучшим ценам.</p>
+					<a href="#car-section" class="btn showAllCars">Поиск</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-6">
+					<p>© 2019 ПрокАвто. Все права защищены.</p>
+				</div>
+				<div class="col-sm-4 col-6">
+					<ul class="social">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-12">
+					<a href="conditions.html" class="usl">Условия</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide product__element">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="small-dialog__img">
+						<img src="img/product/product-1" alt="" id="product-img">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="small-dialog-text__wrapper">
+						<div class="small-dialog-text">
+							<h2 id="product-name">Заголовок</h2>
+							<p id="description">jgbcfybt</p>
+							<p>От <span class="price" id="price">тест </span><i class="fa fa-rub" aria-hidden="true"></i> в день</p>
+							<div class="product__quantity"></div>
+						</div>
+						<form action="" id="retalForm">
+							<input type="text" name="inputName" id="inputName" placeholder="ФИО" required>
+							<input type="text" name="inputTel" id="inputTel" placeholder="Телефон" required>
+							<input type="text" name="inputCar" id="inputCar" hidden>
+						</form>
+						<div id="messegeResult-feedback">
+							<button id="submitButton" type="submit" form="retalForm" class="btn">Арендовать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+		rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:200,300,400,600,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Контакты</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-info">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-1 d-lg-none d-xl-none">
+            <a href="#" class="mobile-menu" id="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-md-4 col-5 mr-auto">
+            <a href="index.html">
+              <div class="top-logo">
+                <img src="img/logo.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-5 col-md-7 col-6">
+            <ul class="top-info-contacts">
+              <li class="d-none d-md-block">
+                <span class="timework">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 09:00-20:00
+                </span>
+              </li>
+              <li>
+                <a href="tel:+71234567890"><i class="fa fa-phone" aria-hidden="true"></i> +7 (123) 45-67-890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-navigation__wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 ">
+            <nav class="top-nav">
+              <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="cars.html">Машины</a></li>
+                <li><a href="price.html">Тарифы</a></li>
+                <li><a href="conditions.html">Условия проката</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2">
+            <div class="social-wrap">
+              <ul class="social">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-header page-header-car">
+      <div class="container">
+        <div class="row">
+          <h1>Контакты</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page-contacts">
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace8cd2e165aeb4ec3b61f933f3c931e9b7e5e1445565af91fad25f07eabbdad8&amp;width=100%25&amp;height=673&amp;lang=ru_RU&amp;scroll=false"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="contact-item-wrap">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="box-contacts-decor"></div>
+            <a href="tel:+71234567890">+7 (123) 45-67-890</a>
+            <a href="tel:+71234567890">+7 (123) 45-67-890</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="contact-item-wrap">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <div class="box-contacts-decor"></div>
+            <a href="#"> г. Краснодар ул. Мачуги, 14</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="contact-item-wrap">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <div class="box-contacts-decor"></div>
+            <a href="mailto:exmple@info.ru">exmple@info.ru</a>
+            <a href="mailto:site@info.ru">site@info.ru</a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="wrap-form-header d-md-flex d-none">
+            <h2>Обратная связь</h2>
+            <p>Если у вас есть какие-либо вопросы, просто заполните контактную форму, и мы ответим вам в ближайшее время.</p>
+          </div>
+          <form id="feedback">
+            <div class="input-wrap">
+              <input type="text" name="name" id="name" placeholder="Имя" required>
+              <input type="email" name="email" id="email" placeholder="E-mail" required>
+              <input type="text" name="inputTel" id="inputTel" placeholder="Телефон" required>
+            </div>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <div id="message-result">
+              <button type="submit" forn="feedback" class="btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-3 col-md-12">
+          <h3>О нас</h3>
+          <p>Наша компания более 15 лет предлагает самый доступный по условиям прокат автомобилей по всей территории РФ.
+            Мы удерживаем низкие цены на аренду благодаря годами отлаженной схеме. </p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="cars.html">Машины</a></li>
+            <li><a href="price.html">Тарифы</a></li>
+            <li><a href="conditions.html">Условия проката</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <h3>Контакты</h3>
+          <ul>
+            <li><a href="tel:+71234567890"><i class="fa fa-phone" aria-hidden="true"></i> +7 (123) 45-67-890</a></li>
+            <li><a href="mailto:site@info.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>site@info.ru</a></li>
+            <li><i class="fa fa-location-arrow" aria-hidden="true"></i> г. Краснодар ул. Мачуги, 14</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 ta-r">
+          <h3>Найди свой автомобиль</h3>
+          <p>Прокат автой, по лучшим ценам.</p>
+          <a href="cars.html" class="btn showAllCars">Поиск</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-6">
+          <p>© 2019 ПрокАвто. Все права защищены.</p>
+        </div>
+        <div class="col-sm-4 col-6">
+          <ul class="social">
+            <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-12">
+          <a href="conditions.html" class="usl">Условия</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.min.js"></script>
+  <script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+</body>
+
+</html>
