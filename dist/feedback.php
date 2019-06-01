@@ -1,15 +1,15 @@
 <?php 
 if($_POST) 
 { 
-$to = "example@example.ru"; //куда отправлять письмо 
+$to = "saleusa.krd@gmail.com"; //куда отправлять письмо 
 $subject = "Обратная связь"; //тема 
 $message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Обратная связь!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#339900;">'.$_POST['name'].'</span><br> 
-E-mail: <span style="font-weight:bold;color:#339900;">'.$_POST['mail'].'</span><br>
-E-mail: <span style="font-weight:bold;color:#339900;">'.$_POST['inputTel'].'</span><br>'
-'Сообщение: <span style="font-weight:bold;color:#339900;">'.$_POST['comment'].'</span><br>'; 
+E-mail: <span style="font-weight:bold;color:#339900;">'.$_POST['email'].'</span><br>
+E-mail: <span style="font-weight:bold;color:#339900;">'.$_POST['inputTel'].'</span><br>
+Сообщение: <span style="font-weight:bold;color:#339900;">'.$_POST['comment'].'</span><br>'; 
 $headers = "Content-type: text/html; charset=UTF-8 \r\n"; 
-$headers .= "From: info@my-site.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 
+$headers .= "From: info@saleusa.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 
 $result = mail($to, $subject, $message, $headers); 
 
 if ($result){ 
